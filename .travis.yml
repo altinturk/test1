@@ -1,6 +1,6 @@
 language: php
 php:
         - nightly
-        - '7.1'
-        - '5.6'
+        - '7.3.0'
+        - '5.6.1'
 
