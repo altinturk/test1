@@ -54,11 +54,11 @@ before_script:
 # use the $DB env variable to determine the phpunit.xml to use
 script: phpunit --configuration phpunit_$DB.xml --coverage-text
 
-before_install:
-- docker pull altinturk/test1
-- docker run -d -p 127.0.0.1:80:4567 altinturk/test1 /bin/sh -c "cd /root/altinturk; bundle exec foreman start;"
-- docker ps -a
-- docker run altinturk/test1 /bin/sh -c "cd /root/altinturk; bundle exec rake test"
+# before_install:
+# - docker pull altinturk/test1
+# - docker run -d -p 127.0.0.1:80:4567 altinturk/test1 /bin/sh -c "cd /root/altinturk; bundle exec foreman start;"
+# - docker ps -a
+# - docker run altinturk/test1 /bin/sh -c "cd /root/altinturk; bundle exec rake test"
 
 
 # configure notifications (email, IRC, campfire etc)
